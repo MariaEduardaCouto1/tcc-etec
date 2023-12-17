@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/64f7aa2edc.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icone.png">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Campezan</title>
+</head>
+<body>
+
+    <!-- chatbot -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a4191fde-defe-4651-a542-8c4e1bc93052/webchat/config.js" defer></script>
+
+    <!-- Barra de Navegação  -->
+    <header>
+        <br><br><br>
+        <nav class="nav-bar">
+            <a><i> <img src="img/logo.png" width="180" height="180" class="logo"></i></a>
+
+            <div class="botao">
+                <button><a href="loginn.php">Entrar</a></button>
+                &nbsp;
+                <button><a href="cadastroo.php">Cadastrar</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrossel -->
+    <div class="slider">
+
+        <div class="slides">
+            <!-- radio button -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!-- slide img -->
+            <div class="slide first"><img src="img/card1.jpg" alt="imagem 1"></div>
+            <div class="slide"><img src="img/card4.jpg" alt="imagem 2"></div>
+            <div class="slide"><img src="img/card3.jpg" alt="imagem 3"></div>
+            <div class="slide"><img src="img/card2.jpg" alt="imagem 4"></div>
+
+            <!-- navigation -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"> </div>
+                <div class="auto-btn2"> </div>
+                <div class="auto-btn3"> </div>
+                <div class="auto-btn4"> </div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"> </label>
+            <label for="radio2" class="manual-btn"> </label>
+            <label for="radio3" class="manual-btn"> </label>
+            <label for="radio4" class="manual-btn"> </label>
+        </div>
+
+    </div>
+
+    <!-- Sobre Nós -->
+    <div class="sobre" id="sobre">
+        <table id="table_sobre">
+
+            <td>
+                <h5 class="h"> 
+                    A Clínica Campezan, fundada em 2023 tem como foco trazer praticidade aos seus pacientes.<br>
+                    Oferecemos através de um corpo clínico integrado, um padrão de atendimento individualizado<br> 
+                    sempre preocupados com o bem estar dos nossos pacientes;<br>
+                    <br>
+
+                    Possui um núcleo em Araraquara-SP com variadas especialidades e excelentes médicos;<br>
+                    A Clínica Campezan possui um ambiente Moderno e acolhedor, desenvolvido especialmente<br> 
+                    para gerar uma melhor experiência de nossos pacientes.
+                </h5>
+            </td>
+
+            <tr>
+                <td>
+                    <div class="dropdown">
+
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                            Nossa Missão
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"> 
+                                A missão da Clínica Campezan esta fundamentada <br> 
+                                na promoção da vida dos seres humanos. <br>
+                                Assim, respaldando seus serviços sempre <br>
+                                voltado ao atendimento especializado e humanizado.
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown2">
+
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                            Nossa Visão
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item">
+                                A Clínica Campezan visa ser reconhecida como <br>
+                                referência na promoção da vida de seus clientes, <br>
+                                tendo a melhoria contínua como pilar de excelência <br>
+                                e superação em seu atendimento clínico médico.
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown3">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nossos Princípios
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"> 
+                                - Comprometimento com os pacientes; <br>
+                                - Ética profissional; <br>
+                                - Respeito e prática da empatia; <br>
+                                - Agilidade nos atendimentos; <br>
+                                - Atendimento acolhedor. 
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <td class="img_medicos"> 
+                <img src="img/ft.png" class="img_sobre">
+            </td>
+
+        </table>
+    </div>
+
+    <br><br><br>
+
+    <!-- Serviços Online -->
+    <div class="icons">
+
+        <h2 class="s"> Serviços online </h2><br>
+
+        <div class="box" id="icon">
+            <img class="hover" src="img/agendamento.png" width="200px" height="200px">
+            <h5 class="f"> Agendamento de consultas</h5>
+        </div>
+
+        <div class="box" id="icon2">
+            <img class="hover1" src="img/exame.png" width="198px" height="198px">
+            <h5 class="f1"> Visualização de exames </h5>
+        </div>
+
+    </div>
+
+    <br><br><br>
+
+    <!-- Footer -->
+    <footer class="foo">
+        <div class="div-pai">
+            <div>
+                <p>
+                    <a> <img id="lofoo" src="img/logobranca.png" width="300vw" height="300vh"> </a>
+                </p>
+            </div>
+        </div>
+
+        <div id="contato">
+            <table id="table_contato">
+
+                <th>
+                    <h3 class="hhh"> Unidade Araraquara </h3>
+                </th>
+
+                <tr>
+                    <td>
+                        <p class="p1"> <img src="img/mapa.png" class="img_contato"> 
+                            Av. Bandeirantes, 503 - Araraquara-SP 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="p1"> <img src="img/telefone.png" class="img_contato"> 
+                            (16) 3324-6872 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="p1"> <img src="img/telefone.png" class="img_contato"> 
+                            (16) 99449-7555 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="p1"> <img src="img/arroba.png" class="img_contato"> 
+                            clinicacampezan@gmail.com 
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p class="p1"> <img src="img/calendario.png" width="20" height="20"> 
+                            Segunda-Sexta: 07:00 às 17:00 
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="div-pai">
+            <div class="medias-socias">
+                <a href="https://www.facebook.com/profile.php?id=61551860773683&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com/clinicacampezan?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i> </a>
+                <a href="mailto:tccinfo2023@gmail.com"><i class="fa fa-envelope"></i> </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Função para rolar para o topo da página -->
+    <script>
+        function scrollParaOTopo() {
+            // Define a posição da rolagem para o topo (0, 0)
+            window.scrollTo(0, 0); 
+        }
+
+        // Adiciona um ouvinte de eventos para recarregar a página
+        window.addEventListener('beforeunload', scrollParaOTopo);
+    </script>
+
+    <script src="js/ca.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

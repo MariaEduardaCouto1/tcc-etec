@@ -1,0 +1,993 @@
+:root {
+  --primary-clr: #0a436b;
+}
+
+/* menu */
+
+
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: content-box;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+/* menu */
+.container {
+  margin: auto;
+}
+
+.flex {
+  align-items: center;
+}
+
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+}
+
+header i {
+  font-size: 30px;
+  color: #3e3a3a;
+}
+
+header ul {
+  margin-top: -5%;
+  list-style-type: none;
+  margin-bottom: 3%;
+  margin-left: 450px;
+}
+
+header ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 50px;
+}
+
+header ul li a {
+  color: #3e3a3a;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #2487ce;
+}
+
+/*saida*/
+h2 {
+  color: white;
+  font-weight: normal;
+  margin-left: 1VW;
+}
+
+.action {
+  position: absolute;
+  position: flex;
+  top: 5%;
+  right: 1%;
+}
+
+.action .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+  background: #ffffff;
+}
+
+.action .menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #24282b;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: none;
+  display: flex;
+  align-items: center;
+}
+
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  transition: 0.5;
+}
+
+.action .menu ul li:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #196297;
+  font-weight: 500;
+  transition: 0.5;
+}
+
+.action .menu ul li a:hover {
+  color: #196297;
+  opacity: 0.5;
+
+}
+
+/*CALENDARIO*/
+
+
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  box-sizing: content-box;
+  overflow-x: hidden;
+}
+
+
+/*mudar a cor dos dias e do mes do ano*/
+
+.calendar {
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  width: 660px;
+  height: 660px;
+  display: flex;
+  margin-left: 600px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  background-color: white;
+  align-items: center;
+}
+
+
+/* definido depois atrás do elemento principal*/
+.calendar::before,
+.calendar::after {
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 97%;
+  border-radius: 0 5px 5px 0;
+  background-color: #e30e0ed7;
+}
+
+
+
+.calendar::before {
+
+  height: 94%;
+  left: calc(100% + 12px);
+  background-color: rgb(133, 133, 133);
+}
+
+
+.calendar .month {
+  cursor: pointer;
+  display: flex;
+  background-color: #0a436b;
+  border-radius: 5px 5px 0 0;
+  width: 560px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.calendar .month .prev,
+.calendar .month .next {
+  color: rgb(141, 141, 141);
+  cursor: pointer;
+}
+
+
+/*muda a cor do fundo do chevroom*/
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+  color: #ffffff;
+}
+
+.month {
+  margin-left: -0.3cm;
+}
+
+.calendar .weekdays {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: rgb(118, 118, 137);
+  font-weight: bold;
+}
+
+.weekdays div {
+  width: 14.28%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekdays {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*caixinha dos dias do mes*/
+.calendar .days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1px;
+  font-size: 1rem;
+  font-weight: 100;
+  /*margem dos dias da semana*/
+  margin-bottom: 100px;
+  column-gap: 7px;
+  justify-content: space-around;
+}
+
+/*margem entre os numeros(dias) */
+.calendar .days .day {
+  width: 5rem;
+  /*responsavel por definir a coluna dos 7 dias da semana*/
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  color: var(--primary-clr);
+  border-bottom: 50%;
+  border: 1px solid transparent;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar .days .day:nth-child(7n + 1) {
+  border-left: 2px solid transparent;
+}
+
+.calendar .days .day:nth-child(7n) {
+  border-right: 2px solid transparent;
+}
+
+.calendar .days .day:nth-child(-n + 7) {
+  border-top: 2px solid transparent;
+}
+
+.calendar .days .day:nth-child(n + 29) {
+  border-bottom: 2px solid transparent;
+}
+
+.calendar .days .day:not(.prev-date, .next-date):hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--primary-clr);
+}
+
+/*muda os dias do mes que vai vir*/
+.calendar .days .prev-date,
+
+.calendar .days .next-date {
+  color: #8a8887;
+}
+
+.calendar .days .active {
+  position: sticky;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-clr);
+}
+
+.calendar .days .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px 2px var(--primary-clr);
+}
+
+.calendar .days .today {
+  font-size: 2rem;
+}
+
+.calendar .days .event {
+  position: sticky;
+  background-color: var(--primary-clr);
+  color: white;
+  padding-top: -35px;
+}
+
+.calendar .days .event::after {
+  content: "";
+  position: sticky;
+  bottom: 10%;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  border-radius: 30px;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.calendar .days .day:hover.event::after {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.calendar .days .active.event::after {
+  background-color: rgb(255, 255, 255);
+  bottom: 20%;
+}
+
+
+
+.calendar .days .active.event {
+  padding-bottom: 10px;
+}
+
+
+/*goto é onde procura os dias */
+
+
+
+.calendar .goto-today {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: var(--primary-clr);
+}
+
+
+
+.calendar .goto-today .goto {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--primary-clr);
+}
+
+.calendar .goto-today .goto input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  color: var(--primary-clr);
+  border-radius: 5px;
+}
+
+.calendar .goto-today button {
+  padding: 5px 10px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--primary-clr);
+}
+
+.calendar .goto-today button:hover {
+  color: #fff;
+  background-color: var(--primary-clr);
+}
+
+.calendar .goto-today .goto button {
+  border: none;
+  border-left: 1px solid var(--primary-clr);
+  border-radius: 0;
+}
+
+/*.container .right {
+    width: 80px;
+    padding: 80px;}   */
+
+/* Tabela medicos */
+table,
+th,
+td {
+  border-bottom: 1px solid #c8cacc;
+  border-collapse: collapse;
+  padding: 7px 9px;
+}
+
+table {
+  width: 30%;
+  height: 25%;
+  background-color: white;
+  float: left;
+  margin-left: 15%;
+  margin-top: 60px;
+  margin-bottom: -18px;
+}
+
+.t {
+  background-color: #0a436b;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+.E {
+  background-color: #e5f4ff;
+  font-size: 18px;
+  color: #022e4d;
+}
+
+.f {
+  background-color: #e5f4ff;
+  font-size: 18px;
+  color: #022e4d;
+  text-align: left;
+}
+
+.espe {
+  text-align: center;
+  font-size: 15px;
+}
+
+.esp {
+  text-align: left;
+  font-size: 15px;
+}
+
+/*right é a seleçao dos dias no evento*/
+
+.right .today-date {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: end;
+}
+
+.right .today-date .event-day {
+  text-align: center;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.traco {
+  color: white;
+}
+
+/*muda os dias de hoje no evento*/
+.right .today-date .event-date {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+
+
+/*onde começa a criacao de evento */
+.events {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: -900px;
+  float: left;
+}
+
+
+.events .event {
+  position: relative;
+  width: 20%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 25px;
+  padding-left: 5px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(100deg, #0a436b, transparent);
+  margin-bottom: 10px;
+}
+
+
+/* mesmo evento */
+
+.events .event:nth-child(even) {
+  background: linear-gradient(100deg, #0a436b, transparent);
+}
+
+.events .event:hover {
+  background: linear-gradient(100deg, var(--primary-clr), transparent);
+}
+
+.events .event .title {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.events .event .title .event-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+
+.events .event i {
+  color: var(--primary-clr);
+  font-size: 0.5rem;
+}
+
+
+
+/* .events .event:hover i {
+    color: rgb(14, 40, 107);
+  } */
+
+
+
+.events .event .event-time {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 15px;
+  pointer-events: none;
+}
+
+
+
+.events .event:hover .event-time {
+  color: #fff;
+}
+
+
+
+/* adicionar marca no evento depois */
+
+
+/* .events .event::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+    color: var(--primary-clr);
+    transform: translateY(-50%);
+  }
+
+ 
+
+  .events .event:hover::after {
+    display: flex;
+  } */
+
+
+/*(add-event) é onde faz o registro do evento*/
+.add-event {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: transparent;
+  border: 2px transparent;
+  opacity: 0.5;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.add-event:hover {
+  opacity: 1;
+}
+
+.add-event i {
+  pointer-events: none;
+}
+
+.add-event-wrapper {
+  bottom: 100px;
+  width: 27%;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #0a436b;
+  transform: translateX(-67%);
+  margin-bottom: 300px;
+  float: right;
+  margin-right: -5%;
+  margin-top: -14.4%;
+}
+
+
+.add-event-wrapper.active {
+  max-height: 300px;
+}
+
+.add-event-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.add-event-header .close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.add-event-header .close:hover {
+  color: var(--primary-clr);
+}
+
+.add-event-header .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.add-event-body {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+}
+
+.add-event-input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+.add-event-input #especialidade {
+  width: 100%;
+  padding: 0 90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #022e4d;
+  border-radius: 4px;
+  font-size: 15px;
+
+}
+
+.add-event-input #medico {
+  width: 70%;
+  padding: 0 90px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #022e4d;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.add-event-body .add-event-input {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.add-event-body .add-event-input input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  color: #101e56;
+  border-radius: 3px;
+
+}
+
+.add-event-body .add-event-input input::placeholder {
+  color: #bbb5b5;
+}
+
+.add-event-body .add-event-input input:focus {
+  border-bottom: 1px solid var(--primary-clr);
+}
+
+
+
+.add-event-body .add-event-input input:focus::placeholder {
+  color: var(--primary-clr);
+}
+
+.add-event-footer {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.add-event-footer .add-event-btn {
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background-color: #2077b4;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid var(--primary-clr);
+}
+
+
+
+.add-event-footer .add-event-btn:hover {
+
+
+
+  background-color: #2a91da;
+  color: white;
+
+
+
+}
+
+/* footer */
+#nome_clinica {
+  margin-left: 40px;
+}
+
+.medias-sociais {
+  margin-right: 15px;
+}
+
+footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  background: #022e4d;
+  height: auto;
+  margin-top: 36%;
+}
+
+#nome_clinica,
+.medias-socias {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-left: 20em;
+}
+
+.div-pai {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.div-pai .medias-socias {
+  margin-top: 20px;
+}
+
+.div-pai .medias-socias a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.div-pai .medias-socias a i {
+  font-size: 20px;
+}
+
+.div-pai .medias-socias a:hover {
+  color: #415aca;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .calendar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .calendar .month {
+    width: 92%;
+    padding: 0 20px;
+  }
+
+  .calendar .weekdays,
+  .calendar .days {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .weekdays div,
+  .calendar .days .day {
+    width: 14.28%;
+    height: 50px;
+  }
+
+  .calendar .days .day {
+    margin-bottom: 10px;
+  }
+
+  /*tabela*/
+  table,
+  th,
+  td {
+    padding: 1px 7px;
+  }
+
+  table {
+    width: 70%;
+    height: 60%;
+    background-color: white;
+    margin-left: 15%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .t {
+    font-size: 16px;
+  }
+
+  .E,
+  .f {
+    font-size: 14px;
+  }
+
+  .espe,
+  .esp {
+    font-size: 12px;
+  }
+
+  .add-event-wrapper {
+    width: 70%;
+    height: 60%;
+    margin-left: 62%;
+    margin-top: 60px;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+
+  .footer {
+    margin-bottom: 60px;
+  }
+
+  .div-pai {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medias-socias {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #nome_clinica {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #nome_clinica,
+  .medias-socias {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    margin-left: 0;
+  }
+
+}

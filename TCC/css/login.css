@@ -1,0 +1,98 @@
+body {
+    background-color: #0a436b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Seta */
+.seta {
+    max-width: 10px;
+    max-height: 10px;
+    margin-right: 105%;
+    cursor: pointer;
+}
+
+.seta img a:hover {
+    color: #196297;
+    opacity: 0.5;
+}
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 420px;
+    height: 570px;
+    padding: 45px;
+}
+
+.login label {
+    color: #424242;
+}
+
+.login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: white;
+    color: #494848;
+    border: none;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: rgb(189, 195, 201);
+    font-size: 16px;
+}
+
+
+.btn {
+    border: none;
+    background-color: #10466d;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 35px;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #196297;
+    color: white;
+}
+
+p {
+    color: #424242;
+}
+
+a {
+    color: #196297;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #45abf3;
+}
+
+
+.erro {
+    color: red;
+}

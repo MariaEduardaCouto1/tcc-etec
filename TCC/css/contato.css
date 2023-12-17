@@ -1,0 +1,384 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  overflow-x: hidden;
+}
+
+/* menu */
+
+.container {
+  margin: auto;
+}
+
+.flex {
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+}
+
+header i {
+  font-size: 30px;
+  color: #3e3a3a;
+}
+
+header ul {
+  margin-top: -5%;
+  list-style-type: none;
+  margin-left: 450px;
+}
+
+header ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 50px;
+}
+
+header ul li a {
+  color: #3e3a3a;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #2487ce;
+}
+
+
+
+/* E-mails Medicos*/
+.contato {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  background-color: white;
+  padding: 2px 0;
+  border-radius: 10px;
+}
+
+.contato table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.contato table tr td {
+  height: 56px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: .25px;
+  text-align: left;
+  padding: 0 10px;
+
+}
+
+.contato table tr td {
+  border-bottom: 1px solid #c8cacc;
+  padding: 0 10px;
+
+}
+
+.contato table th {
+  background-color: #0a436b;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: normal;
+}
+
+.contato table tr {
+  height: 60px;
+}
+
+
+
+
+/*fale conosco*/
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 450px;
+  background-color: white;
+  margin: 10em auto;
+  padding: 20px;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#login p {
+  color: #0a436b;
+  font-size: 25px;
+}
+
+#login input {
+  margin-top: 10px;
+  background-color: white;
+  color: #494848;
+  height: 50px;
+  outline: none;
+  border: 1px solid #b7b6b6;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: rgb(189, 195, 201);
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  background-color: #0a436b;
+  color: white;
+  font-size: 20px;
+  height: 35px;
+  width: 40%;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.btn:hover {
+  background-color: #2487ce;
+}
+
+/*saida*/
+h2 {
+  color: white;
+  font-weight: normal;
+  margin-left: 1VW;
+}
+
+.action {
+  position: absolute;
+  position: flex;
+  top: 5%;
+  right: 1%;
+}
+
+.action .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+  background: #ffffff;
+}
+
+.action .menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #24282b;
+}
+
+.action .menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: none;
+  display: flex;
+  align-items: center;
+}
+
+.action .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  transition: 0.5;
+}
+
+.action .menu ul li:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.action .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #196297;
+  font-weight: 500;
+  transition: 0.5;
+}
+
+.action .menu ul li a:hover {
+  color: #196297;
+  opacity: 0.5;
+
+}
+
+
+/* footer */
+#nome_clinica {
+  margin-left: 40px;
+}
+
+.medias-sociais {
+  margin-right: 15px;
+}
+
+footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  background: #022e4d;
+  height: auto;
+}
+
+#nome_clinica,
+.medias-socias {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-left: 20em;
+}
+
+.div-pai {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+}
+
+.div-pai .medias-socias {
+  margin-top: 20px;
+}
+
+.div-pai .medias-socias a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.div-pai .medias-socias a i {
+  font-size: 20px;
+}
+
+.div-pai .medias-socias a:hover {
+  color: #415aca;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+
+  .div-pai {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medias-socias {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #nome_clinica {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #nome_clinica,
+  .medias-socias {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    margin-left: 0;
+  }
+
+  /* tabela medicos */
+  .contato {
+    width: 95%;
+  }
+
+  .contato table {
+    width: 150%;
+  }
+
+  .contato table tr td {
+    height: 40px;
+    font-size: 13.5px;
+
+  }
+
+}

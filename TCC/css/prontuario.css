@@ -1,0 +1,328 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* menu */
+
+.container {
+    margin: auto;
+}
+
+.flex {
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+}
+
+header i {
+    font-size: 30px;
+    color: #3e3a3a;
+}
+
+header ul {
+    margin-top: -5%;
+    list-style-type: none;
+    margin-left: 450px;
+}
+
+header ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+header ul li a {
+    color: #3e3a3a;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #2487ce;
+}
+
+
+/* fundo branco*/
+.area-pront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17%;
+}
+
+.pront {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 35vw;
+    height: auto;
+    margin-bottom: 10%;
+
+}
+
+.th2 {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 30px;
+    background-color: #0a436b;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/* detalhes */
+
+.pront table {
+    color: #424242;
+}
+
+.pront table {
+    text-align: left;
+    color: #424242;
+    margin: 15px 30px;
+}
+
+.pront table th {
+    color: #0a436b;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+
+.pront table tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.pront table td {
+    margin-top: 10px;
+    color: #312c2c;
+    border: none;
+    height: auto;
+    outline: none;
+    border-radius: 10%;
+    margin-bottom: 1%;
+}
+
+/*saida*/
+h2 {
+    color: white;
+    font-weight: normal;
+    margin-left: 1VW;
+}
+
+.action {
+    position: absolute;
+    position: flex;
+    top: 5%;
+    right: 1%;
+}
+
+.action .profile {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.action .profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action .menu {
+    position: absolute;
+    top: 120px;
+    right: -10px;
+    padding: 10px 20px;
+    background-color: aliceblue;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .menu.active {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+    background: #ffffff;
+}
+
+.action .menu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    transform: rotate(45deg);
+}
+
+.action .menu h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #24282b;
+}
+
+.action .menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: none;
+    display: flex;
+    align-items: center;
+}
+
+.action .menu ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    transition: 0.5;
+}
+
+.action .menu ul li:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.action .menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #196297;
+    font-weight: 500;
+    transition: 0.5;
+}
+
+.action .menu ul li a:hover {
+    color: #196297;
+    opacity: 0.5;
+
+}
+
+/* footer */
+#nome_clinica {
+    margin-left: 40px;
+}
+
+.medias-sociais {
+    margin-right: 15px;
+}
+
+footer {
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    background: #022e4d;
+    height: auto;
+}
+
+#nome_clinica,
+.medias-socias {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    margin-left: 20em;
+}
+
+.div-pai {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: white;
+    font-weight: normal;
+}
+
+.div-pai .medias-socias {
+    margin-top: 20px;
+}
+
+.div-pai .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.div-pai .medias-socias a i {
+    font-size: 20px;
+}
+
+.div-pai .medias-socias a:hover {
+    color: #415aca;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .pront {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .th2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .div-pai {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medias-socias {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #nome_clinica {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #nome_clinica,
+    .medias-socias {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        margin-left: 0;
+    }
+}
